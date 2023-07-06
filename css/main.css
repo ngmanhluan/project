@@ -1,0 +1,310 @@
+:root {
+    --color-text-header: white;
+    --color-text-header-hover: black;
+    --coler-navbar: #222222;
+}
+
+.logo img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+.toggle {
+    width: 100%;
+    height: 40px;
+    background-color: var(--color-text-header-hover);
+}
+
+#button {
+
+    border: none;
+    background: none;
+    outline: none;
+    /* display: none; */
+}
+
+#button .fa-bars {
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+/*      navbar */
+.navbar {
+    width: 100%;
+    background-color: var(--coler-navbar);
+    display: flex;
+    position: fixed;
+    flex-wrap: 1000px;
+    z-index: 2;
+    top: 0;
+    flex-wrap: nowrap;
+}
+
+.menu_Sum {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.icon_Login {
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    height: 100%;
+    background-color: var(--coler-navbar);
+    align-items: center;
+}
+
+li:hover {
+    background-color: white;
+    color: black;
+}
+
+.oder_Online {
+    border: 1px solid white;
+}
+
+.menu_Sum li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3px 30px;
+}
+
+
+.img_text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.img_text .img {
+
+    width: 1290px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    position: absolute;
+}
+
+.img img {
+    width: 95%;
+    animation-name: slide;
+    animation-duration: 4s;
+}
+
+.text {
+    width: 100%;
+    z-index: 1;
+    top: 200px;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.text h1 {
+    margin-top: 10px;
+    font-size: 150px;
+    font-weight: bold;
+    text-shadow: 0px 2px 6px black;
+}
+
+.text h2 {
+    font-size: 38px;
+    font-family: 'Script', cursive;
+    text-shadow: 0px 1px 4px black;
+}
+
+.text .oder {
+    width: 100%;
+    margin-top: 130px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.text .oder:hover a h3 {
+
+    background-color: white;
+}
+
+.oder>a>h3 {
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    border: 1px solid white;
+    display: flex;
+}
+
+/* Phần thân Body */
+.body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+}
+
+/* container - row  */
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('font/DancingScript.ttf') format('truetype');
+}
+
+.container .row {
+    margin-top: 630px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+.item-card {
+    transition: transform 0.3s ease 0s;
+    margin: 5px;
+}
+
+/* card */
+
+.content-card {
+    width: 100%;
+    height: 100%;   
+    background-size: 250px 400px;
+    background-repeat: no-repeat;
+    box-shadow: 0px 1px 4px rgb(0, 0, 0);
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+}
+
+.body_column1{
+    background-image: url(../image/dinner.jpg);
+}
+
+.body_column2{
+    background-image: url(../image/luncher.jpg);
+}
+
+.body_column3{
+    background-image: url(../image/desserts.jpg);
+}
+
+.body_column4{
+    background-image: url(../image/drinks.jpg);
+}
+
+.item-card:hover .layer {
+    display: block;
+    transition: 3s ease;
+}
+
+.item-card:hover .text_food {
+    top: 40%;
+    font-size: 38px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.layer {
+    height: 100%;
+    background-image: linear-gradient(360deg, #EA2027, rgba(255, 0, 0, 0));
+    opacity: 35%;
+    display: none;
+}
+
+.text_food {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: 200px;
+    text-shadow: 2px 1px 3px black;
+}
+
+/* restaurant-space */
+.restaurant {
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+}
+
+.content-restaurant {
+    width: 400px;
+    padding: 20px;
+}
+
+.title-restaurant{
+    width: 350px;
+    background-color: #8d8d8d;
+    text-align: center;
+}
+
+.text-p{
+    width: 360px;
+    padding-left: 20px;
+}
+
+.image-All {
+    width: 280px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: flex;
+    width: 400%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    animation: slide 8s ease infinite ;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    25%{
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    100%{
+        left: 0;
+    }
+}

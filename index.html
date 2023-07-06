@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KET THUC MON</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <button id="button"><i class="fa-solid fa-bars"></i></button>
+            <a class="logo" href=""><img src="../image/logo1.png" alt=""></a>
+            <ul class="menu_Sum">
+                <li class="home"><a href="">Home</a></li>
+                <li class="menu"><a href="">Menu</a></li>
+                <li class="reservations"><a href="">Reservations</a></li>
+                <li class="location_Hours"><a href="">Location & Hours</a></li>
+                <li class="oder_Online"><a href="">Oder Online</a></li>
+                <li class="icon"><a href=""><i class="fa-solid fa-user"></i></a></li>
+                <li id="login" class="icon"><a href="##">Login</a></li>
+                <li class="icon"><a href=""><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <div class="img_text">
+            <div class="img">
+                <img src="../image/food1.jpg" alt="">
+            </div>
+            <!-- <div class="text">
+                <h2>The</h2>
+                <h1>PIZZA SHOP</h1>
+                <div class="oder">
+                    <a href="#">
+                        <h3>Oder Online</h3>
+                    </a>
+                </div>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- modal -->
+    <div id="modal" class="modal">
+        <div id="modalOverlay" class="modal__overlay"></div>
+
+        <div id="modalBody" class="modal__body">
+            <div id="authForm" class="auth-form">
+                <div class="auth-container">
+                    <div class="auth-header">
+                        <h3 id="authLogin" class="auth-header__heading">Đăng nhập</h3>
+                        <span id="authRegister" class="auth-header__switch">Đăng ký</span>
+                    </div>
+                    <div class="auth-body">
+                        <input id="btnInputUse" class="auth-use" type="text" placeholder="Tên đăng nhập">
+                        <input id="btnInputPassword" class="auth-password" type="text" placeholder="password">
+                    </div>
+                    <div class="bag">
+                        <a class="forgot-password" href="##">Quên mật khẩu</a>
+                        <a class="support" href="##">Cần hỗ trợ?</a>
+                    </div>
+                    <div class="log-out">
+                        <button id="out" class="out"> TRỞ LẠI</button>
+                        <button class="login" onclick="validateLogin()">ĐĂNG NHẬP</button>
+                    </div>
+                    <div class="connection">
+                        <button class="btn-facebook"><i class="fa-brands fa-square-facebook"></i>Đăng ký bằng
+                            Facebook</button>
+                        <button class="btn-google"><i class="fa-brands fa-google"></i>Đăng ký bằng Google</button>
+                    </div>
+                </div>
+            </div>
+            <!-- form register -->
+            <div id="authForm" class="auth-form">
+                <div class="auth-container">
+                    <div class="auth-header">
+                        <h3 id="authRegister2" class="auth-header__heading">Đăng Ký</h3>
+                        <span id="authLogin2" class="auth-header__switch">Đăng Nhập</span>
+                    </div>
+                    <div class="auth-body">
+                        <input id="btnInputUse" class="auth-use-new" type="text" placeholder="Tên đăng nhập">
+                        <input id="btnInputEmail" class="auth-email" type="text" placeholder="Nhập email">
+                        <input id="btnInputPasswordNew" class="auth-password-new" type="text" placeholder="password">
+                        <input id="btnInputCfPassword" class="auth-cf-password" type="text"
+                            placeholder="Xác nhận password">
+                    </div>
+                    <div class="log-out">
+                        <button id="out2" class="out"> TRỞ LẠI</button>
+                        <button class="login" onclick="validateLogin()">ĐĂNG KÝ</button>
+                    </div>
+                    <div class="connection">
+                        <button class="btn-facebook"><i class="fa-brands fa-square-facebook"></i>Đăng ký bằng
+                            Facebook</button>
+                        <button class="btn-google"><i class="fa-brands fa-google"></i>Đăng ký bằng Google</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 item-card">
+                    <div class="body_column1 content-card">
+                        <div class="layer">
+                        </div>
+                        <h1 class="text_food">DINNER</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 item-card">
+                    <div class="body_column2 content-card">
+                        <div class="layer">
+                        </div>
+                        <h1 class="text_food">LUNCHER</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 item-card">
+                    <div class="body_column3 content-card">
+                        <div class="layer">
+                        </div>
+                        <h1 class="text_food">DESSERTS</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 item-card">
+                    <div class="body_column4 content-card">
+                        <div class="layer">
+                        </div>
+                        <h1 class="text_food">DRINKS</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Không gian quán -->
+        <div class="restaurant-space restaurant">
+            <div class="content-space content-restaurant">
+                <h2 class="text-space title-restaurant">RESTAURANT SPACR</h2>
+                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias recusandae
+                    ratione, amet commodi cum est quas dolores incidunt, nulla molestias doloribus fuga. Fuga dolorum a
+                    ab tempora esse reiciendis.</p>
+                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad porro perferendis
+                    voluptatem dolorum nulla alias enim excepturi nisi ducimus maxime repellendus. Enim, voluptatum
+                    repellendus ut debitis est accusamus maxime!</p>
+            </div>
+            <div class="image-All">
+                <div class="slide">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE.jpg" alt="Slide 1">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE2.jpg" alt="Slide 2">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE3.jpg" alt="Slide 3">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE4.jpg" alt="Slide 4">
+                </div>
+            </div>
+        </div>
+
+        <!-- Thực đơn -->
+        <div class="restaurant-space restaurant">
+            <div class="image-All">
+                <div class="slide">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE.jpg" alt="Slide 1">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE2.jpg" alt="Slide 2">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE3.jpg" alt="Slide 3">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE4.jpg" alt="Slide 4">
+                </div>
+            </div>
+            <div class="content-menu content-restaurant">
+                <h2 class="text-menu title-restaurant">RESTAURANT MENU</h2>
+                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias recusandae
+                    ratione, amet commodi cum est quas dolores incidunt, nulla molestias doloribus fuga. Fuga dolorum a
+                    ab tempora esse reiciendis.</p>
+                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad porro perferendis
+                    voluptatem dolorum nulla alias enim excepturi nisi ducimus maxime repellendus. Enim, voluptatum
+                    repellendus ut debitis est accusamus maxime!</p>
+                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad porro perferendis
+                    voluptatem dolorum nulla alias enim excepturi nisi ducimus maxime repellendus. Enim, voluptatum
+                    repellendus ut debitis est accusamus maxime!</p>
+            </div>
+        </div>
+
+        <!-- location -->
+        <div class="restaurant-space restaurant">
+            <div class="content-space content-restaurant">
+                <h2 class="text-space title-restaurant">RESTAURANT ADDRESS</h2>
+                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias recusandae
+                    ratione, amet commodi cum est quas dolores incidunt, nulla molestias doloribus fuga. Fuga dolorum a
+                    ab tempora esse reiciendis.</p>
+                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad porro perferendis
+                    voluptatem dolorum nulla alias enim excepturi nisi ducimus maxime repellendus. Enim, voluptatum
+                    repellendus ut debitis est accusamus maxime!</p>
+            </div>
+            <div class="image-All">
+                <div class="slide">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE.jpg" alt="Slide 1">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE2.jpg" alt="Slide 2">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE3.jpg" alt="Slide 3">
+                    <img class="slide-img" src="../image/RESTAURANT SPACE4.jpg" alt="Slide 4">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/js/index.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#button').click(function () {
+            $('ul.menu_Sum').slideToggle();
+        });
+    })
+</script>
+
+</html>

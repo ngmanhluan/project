@@ -1,0 +1,171 @@
+/* màn 768px */
+@media only screen and (max-width:768px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-left: 50px;
+        position: fixed;
+        padding: none;
+    }
+
+    #button {
+        top: 8px;
+        display: block;
+        position: fixed;
+    }
+
+    .menu_Sum {
+        width: 100%;
+        height: auto;
+        display: none;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--coler-navbar);
+    }
+
+    .menu_Sum li a {
+        padding: 10px;
+    }
+
+    .icon_Login {
+        width: 100%;
+    }
+
+    .icon_Login li {
+        padding: 10px;
+    }
+
+    .text {
+        top: 100px;
+    }
+
+    .text h2 {
+        font-size: 24px;
+    }
+
+    .text h1 {
+        font-size: 80px;
+    }
+
+    .text .oder {
+        margin-top: 50px;
+    }
+    
+    /* respinsive card */
+    .row {
+        margin-top: 420px !important;
+    }
+
+    .item-card {
+        margin: 25px 0 0 0 !important;
+    }
+
+
+    /* responsive content  */
+    .restaurant {
+        column-gap: 30px;
+    }
+
+    .content-restaurant {
+        width: 350px;
+    }
+
+    .title-restaurant {
+        width: 320px;
+        font-size: 24px;
+    }
+
+    .text-p {
+        width: 320px;
+        font-size: 12px;
+    }
+
+    .image-All {
+        width: 240px;
+        height: 400px;
+    }
+
+    .slide {
+        display: flex;
+        width: 480%;
+    }
+}
+
+/* màn 1024 */
+@media only screen and (max-width:1024px) {
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .img_text .img{
+        width: 1100px;
+        height: 500px;
+    }
+
+    /* responsive content */
+    .restaurant {
+        display: flex;
+        column-gap: 100px;
+    }
+
+    /* respinsive card */
+
+    .item-card{
+        width: 200px;
+    }
+    
+    .row {
+        margin-top: 440px !important;
+        width: 100%;
+        height: 330px;
+    }
+
+    .content-card {
+        background-size: 250px 330px;
+    }
+
+    .text_food {
+        font-size: 26px;
+    }
+    
+    .item-card:hover .text_food {
+        font-size: 30px;
+    }
+
+    .image-All {
+        width: 240px;
+        height: 400px;
+    }
+
+    .slide {
+        display: flex;
+        width: 480%;
+    }
+
+
+    @keyframes slide {
+        0% {
+            left: 0;
+        }
+
+        25% {
+            left: -120%;
+        }
+
+        50% {
+            left: -240%;
+        }
+
+        75% {
+            left: -380%;
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+}
