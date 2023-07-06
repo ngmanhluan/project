@@ -1,0 +1,55 @@
+@media only screen and (max-width:768px){
+
+    .logo{
+        margin-left: 50px;
+        position: fixed;
+        padding: none;
+    }
+    #button{
+        top: 8px;
+        display: block;
+        position: fixed;
+    }
+    .menu_Sum{
+        width: 100%;
+        height: auto;
+        display: none;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--coler-navbar);
+    }
+    /* cho tag a padding chứ kp tag li ban đầu */
+    .menu_Sum li a{
+        padding: 10px;
+    }
+    .icon_Login{
+        width: 100%;
+    }
+    .icon_Login li{
+        padding: 10px;
+    }
+
+    .text{
+        top:100px;
+    }
+    .text h2{
+        font-size: 24px;
+    }
+    .text h1{
+        font-size: 80px;
+    }
+    .text .oder{
+        margin-top: 50px;
+    }
+
+}
+
+@media only screen and (max-width:1030px) {
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .restaurant-space{
+        column-gap: 300px;
+    }
+}
