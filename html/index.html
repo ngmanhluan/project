@@ -12,41 +12,51 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">    
 </head>
-
 <body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
     <header>
         <nav class="navbar">
             <button id="button"><i class="fa-solid fa-bars"></i></button>
             <a class="logo" href=""><img src="../image/logo1.png" alt=""></a>
             <ul class="menu_Sum">
-                <li class="home"><a href="">Home</a></li>
-                <li class="menu"><a href="">Menu</a></li>
-                <li class="reservations"><a href="">Reservations</a></li>
-                <li class="location_Hours"><a href="">Location & Hours</a></li>
-                <li class="oder_Online"><a href="">Oder Online</a></li>
-                <li class="icon"><a href=""><i class="fa-solid fa-user"></i></a></li>
-                <li id="login" class="icon"><a href="##">Login</a></li>
-                <li class="icon"><a href=""><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
-                </li>
+              <li class="home"><a href="">Home</a></li>
+              <li class="menu"><a href="">Menu</a></li>
+              <li class="reservations"><a href="">Reservations</a></li>
+              <li class="location_Hours"><a href="">Location & Hours</a></li>
+              <li class="order_Online"><a href="../order/index.html">Order Online</a></li>
+              <li class="icon"><a href=""><i class="fa-solid fa-user"></i></a></li>
+              <li id="login" class="icon"><a href="##">Login</a></li>
+              <li class="icon"><a href=""><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
             </ul>
-        </nav>
-        <div class="img_text">
-            <div class="img">
-                <img src="../image/ảnh food 3.jpg" alt="">
-            </div>
-            <!-- <div class="text">
-                <h2>The</h2>
-                <h1>PIZZA SHOP</h1>
-                <div class="oder">
-                    <a href="#">
-                        <h3>Oder Online</h3>
-                    </a>
+          </nav>
+          <div class="container-xxl py-5 bg-dark hero-header mb-5">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
+                        <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                    </div>
+                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                        <img class="img-fluid" src="..//image/hero.png" alt="">
+                    </div>
                 </div>
-            </div> -->
+            </div>
         </div>
+        
+            
+        </div>
+        
     </header>
+    
 
     <!-- modal -->
     <div id="modal" class="modal">
@@ -207,8 +217,12 @@
                         </div>
                     </div>
                 </div>
+               
+        
     </div>
+    
 </body>
+
 
 <script src="/js/index.js"></script>
 <script>
