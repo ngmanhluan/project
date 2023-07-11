@@ -221,7 +221,7 @@ header{
 }
 
 /* Register */
-.auth-use-new{
+.auth-use-new {
     padding: 6px;
     width: 100%;
     height: 35px;
@@ -234,21 +234,7 @@ header{
     color: black !important;
 }
 
-.auth-email{
-    padding: 6px;
-    margin: 20px 0 0 0;
-    width: 100%;
-    height: 35px;
-    background: none;
-    border: 1px solid #95a5a6 ;
-    border-radius:3px;
-    font-size: 16px;
-    box-sizing: border-box;
-    outline: none;
-    color: black !important;
-}
-
-.auth-password-new{
+.auth-email {
     padding: 6px;
     margin: 20px 0 0 0;
     width: 100%;
@@ -262,7 +248,7 @@ header{
     color: black !important;
 }
 
-.auth-cf-password{
+.auth-password-new {
     padding: 6px;
     margin: 20px 0 0 0;
     width: 100%;
@@ -276,7 +262,21 @@ header{
     color: black !important;
 }
 
-.out2{
+.auth-cf-password {
+    padding: 6px;
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: 35px;
+    background: none;
+    border: 1px solid #95a5a6 ;
+    border-radius:3px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    color: black !important;
+}
+
+.out2 {
     width: 110px;
     height: 30px;
     background: none;
@@ -286,7 +286,7 @@ header{
     font-size: 16px;
 }
 
-.register{
+.register {
     width: 110px;
     height: 30px;
     background: none;
@@ -297,7 +297,34 @@ header{
     background-color: #EA2027;
 }
 
-.register:hover{
+.register:hover {
     background-color: #95a5a6;
+}
+
+.Bill-Order {
+    width: 100%;
+    color: black !important;
+    font-size: 24px;
+}
+
+.modal-body_order {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.booking-information {
+color: black !important;
+font-size: 16px;
+}
+
+.button-order_content {
+    color: black !important;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
 }
 

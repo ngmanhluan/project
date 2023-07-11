@@ -71,3 +71,29 @@ function validateLogin() {
         alert("đăng nhập thất bại")
     }
 }
+
+
+let ojdataOrderTable = {
+    nameOrder: "",
+    dateOrder: "",
+    timeOrder: "",
+    numberTable: ""
+}
+
+let dataOrderTable = $$("#submutTable")
+let iputNameOrder = $$("iputNameOrder")
+dataOrderTable.addEventListener("click", () => {
+    modal.style.display = "block"
+    authForm[2].style.display = "block"
+    alert("Đặt bàn thành thông");
+    ojdataOrderTable.nameOrder = $$("#nameOrder").value;
+    iputNameOrder = $$("iputNameOrder").innerHTML = ojdataOrderTable.nameOrder
+    ojdataOrderTable.dateOrder = $$("#dateOrder").value;
+    iputNameOrder = $$("iputDateOrder").innerHTML = ojdataOrderTable.dateOrder
+    ojdataOrderTable.timeOrder = $$("#timeOrder").value;
+    iputNameOrder = $$("iputTimeOrder").innerHTML = ojdataOrderTable.timeOrder
+    ojdataOrderTable.numberTable = $$("#numberTable").value;
+    iputNameOrder = $$("iputnumberTable").innerHTML = ojdataOrderTable.numberTable
+})
+
+ 

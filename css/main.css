@@ -160,8 +160,9 @@ li:hover {
     animation: imgRotate 50s linear infinite;
 }
 .hero-header .img-fluid {
-    max-width: 50%;
-    height: auto;
+    /* max-width: 50%; */
+    width: 500px;
+    height: 500px;
     margin: 0 auto;
 }
 @keyframes imgRotate { 
@@ -174,6 +175,20 @@ li:hover {
     color: rgba(255, 255, 255, .5);
 }
 
+.row-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary {
+    color: red;
+    background-color: aqua;
+}
+
+
+
 /* Phần thân Body */
 .body {
     display: flex;
@@ -185,7 +200,7 @@ li:hover {
 
 /* container - row  */
 .container .row {
-    margin-top: 700px;
+    /* margin-top: 200; */
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -205,7 +220,7 @@ li:hover {
 .row .col-lg-3 {
     width: 100%;
     height: 400px;
-    margin: 15px;
+    margin-top: 15px;
 }
 
 .item-card {
@@ -333,17 +348,17 @@ li:hover {
 }
 
 .content-restaurant {
-    width: 400px;
+    width: 450px;
 }
 
 .title-restaurant{
-    width: 350px;
+    width: 450px;
     background-color: #8d8d8d;
     text-align: center;
 }
 
 .text-p{
-    width: 360px;
+    width: 450px;
     padding-left: 20px;
 }
 
@@ -450,3 +465,6 @@ li:hover {
     padding-right: 0;
     border-right: none;
 }
+
+
+

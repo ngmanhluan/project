@@ -12,38 +12,39 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
 </head>
+
 <body>
-    <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
     <header>
         <nav class="navbar">
             <button id="button"><i class="fa-solid fa-bars"></i></button>
             <a class="logo" href=""><img src="../image/logo1.png" alt=""></a>
             <ul class="menu_Sum">
-              <li class="home"><a href="">Home</a></li>
-              <li class="menu"><a href="">Menu</a></li>
-              <li class="reservations"><a href="">Reservations</a></li>
-              <li class="location_Hours"><a href="">Location & Hours</a></li>
-              <li class="order_Online"><a href="../order/index.html">Order Online</a></li>
-              <li class="icon"><a href=""><i class="fa-solid fa-user"></i></a></li>
-              <li id="login" class="icon"><a href="##">Login</a></li>
-              <li class="icon"><a href=""><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
+                <li class="home"><a href="">Home</a></li>
+                <li class="menu"><a href="">Menu</a></li>
+                <li class="reservations"><a href="">Reservations</a></li>
+                <li class="location_Hours"><a href="">Location & Hours</a></li>
+                <li class="order_Online"><a href="../order/index.html">Order Online</a></li>
+                <li class="icon"><a href=""><i class="fa-solid fa-user"></i></a></li>
+                <li id="login" class="icon"><a href="##">Login</a>
+                <ul class="product_oder">
+                    <li></li>
+                    <li></li>
+                </ul></li>
+                <li class="icon"><a href=""><i class="fa-sharp fa-solid fa-bag-shopping"></i></a></li>
             </ul>
-          </nav>
-          <div class="container-xxl py-5 bg-dark hero-header mb-5">
+        </nav>
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
             <div class="container my-5 py-5">
-                <div class="row align-items-center g-5">
+                <div class="row-header align-items-center g-5">
                     <div class="col-lg-6 text-center text-lg-start">
                         <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
-                        <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                        <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam
+                            dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
+                            stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <a href="##" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
                     </div>
                     <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                         <img class="img-fluid" src="..//image/hero.png" alt="">
@@ -51,17 +52,11 @@
                 </div>
             </div>
         </div>
-        
-            
-        </div>
-        
     </header>
-    
 
     <!-- modal -->
     <div id="modal" class="modal">
         <div id="modalOverlay" class="modal__overlay"></div>
-
         <div id="modalBody" class="modal__body">
             <div id="authForm" class="auth-form">
                 <div class="auth-container">
@@ -113,10 +108,28 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div> 
 
-    
+            <!-- modal order a table -->
+            <div id="authForm" class="auth-form">
+                <div class="auth-container">
+                    <div class="auth-header">
+                        <span class="Bill-Order">BILL</span>
+                    </div>
+                    <div class="modal-body_order">
+                        <p id="nameOrder" class="booking-information">Name: <span id="iputNameOrder"></span></p>
+                        <p id="dateOrder" class="booking-information">Date: <span id="iputDateOrder"></span></p>
+                        <p id="timeOrder" class="booking-information">Time: <span id="iputTimeOrder"></span></p>
+                        <p id="numberTable" class="booking-information">Number Of Table: <span id="iputnumberTable"></span></p>
+                        <div class="button-order">
+                            <button class="button-order_content">Skip</button>
+                            <button class="button-order_content">On The Bill</button>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- body -->
     <div class="body">
         <div class="container">
@@ -154,6 +167,7 @@
 
         <!-- Không gian quán -->
         <div class="restaurant-space">
+            
             <div class="content-space content-restaurant">
                 <h2 class="text-space title-restaurant">RESTAURANT SPACR</h2>
                 <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias recusandae
@@ -173,59 +187,69 @@
             </div>
         </div>
 
-        <!-- Thực đơn -->
-        <div class="restaurant-space">
-            <div class="image-All">
-                <div class="slide">
-                    <img class="slide-img" src="../image/RESTAURANT SPACE.jpg" alt="Slide 1">
-                    <img class="slide-img" src="../image/RESTAURANT SPACE2.jpg" alt="Slide 2">
-                    <img class="slide-img" src="../image/RESTAURANT SPACE3.jpg" alt="Slide 3">
-                    <img class="slide-img" src="../image/RESTAURANT SPACE4.jpg" alt="Slide 4">
+        <!-- Oder -->
+        <div class="wrapper">
+            <div class="container_3">
+                <div class="container-time">
+                    <h2 class="heading">Time Open</h2>
+                    <h3 class="heading-days">Monday-Friday</h3>
+                    <p>7am - 11am (breakfast)</p>
+                    <p>11am - 10pm (lunch/dinner)</p>
+
+                    <h3 class="heading-days">Saturday and sunday</h3>
+                    <p>9am - 1am (breakfast)</p>
+                    <p>1am - 10pm (lunch/dinner)</p>
+
+                    <hr>
+
+                    <h4 class="heading-phone">Call Us: (123) 45-45-456</h4>
                 </div>
-            </div>
-            <div class="content-space content-restaurant">
-                <h2 class="text-space title-restaurant">RESTAURANT MENU</h2>
-                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias recusandae
-                    ratione, amet commodi cum est quas dolores incidunt, nulla molestias doloribus fuga. Fuga dolorum a
-                    ab tempora esse reiciendis.</p>
-                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad porro perferendis
-                    voluptatem dolorum nulla alias enim excepturi nisi ducimus maxime repellendus. Enim, voluptatum
-                    repellendus ut debitis est accusamus maxime!</p>
-                <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad porro perferendis
-                    voluptatem dolorum nulla alias enim excepturi nisi ducimus maxime repellendus. Enim, voluptatum
-                    repellendus ut debitis est accusamus maxime!</p>
+
+                <div class="container-form">
+                    <form action="#">
+                        <h2 class="heading heading-black">Booking A Table</h2>
+
+                        <div class="form-field">
+                            <p>Your Name</p>
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                        <div class="form-field">
+                            <p>Your email</p>
+                            <input type="email" placeholder="Your email">
+                        </div>
+                        <div class="form-field">
+                            <p>Date</p>
+                            <input type="date">
+                        </div>
+                        <div class="form-field">
+                            <p>Time</p>
+                            <input type="time">
+                        </div>
+                        <div class="form-field">
+                            <p>How many people?</p>
+                            <select name="select" id="#">
+                                <option value="1">1 person</option>
+                                <option value="2">2 persons</option>
+                                <option value="3">3 persosn</option>
+                                <option value="4">4 persons</option>
+                                <option value="5">5 persons</option>
+                                <option value="5+">5+ persons</option>
+                            </select>
+                        </div>
+                        <button id="submutTable" class="btn">Submit</button>
+                    </form>
+                </div>
             </div>
         </div>
 
-        <!-- location -->
-                <!-- Không gian quán -->
-                <div class="restaurant-space">
-                    <div class="content-space content-restaurant">
-                        <h2 class="text-space title-restaurant">RESTAURANT SPACR</h2>
-                        <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias recusandae
-                            ratione, amet commodi cum est quas dolores incidunt, nulla molestias doloribus fuga. Fuga dolorum a
-                            ab tempora esse reiciendis.</p>
-                        <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, ad porro perferendis
-                            voluptatem dolorum nulla alias enim excepturi nisi ducimus maxime repellendus. Enim, voluptatum
-                            repellendus ut debitis est accusamus maxime!</p>
-                    </div>
-                    <div class="image-All">
-                        <div class="slide">
-                            <img class="slide-img" src="../image/RESTAURANT SPACE.jpg" alt="Slide 1">
-                            <img class="slide-img" src="../image/RESTAURANT SPACE2.jpg" alt="Slide 2">
-                            <img class="slide-img" src="../image/RESTAURANT SPACE3.jpg" alt="Slide 3">
-                            <img class="slide-img" src="../image/RESTAURANT SPACE4.jpg" alt="Slide 4">
-                        </div>
-                    </div>
-                </div>
-               
         
+        <!-- feedback -->
     </div>
-    
 </body>
 
 
 <script src="/js/index.js"></script>
+<script src="../js/script.js"></script>
 <script>
     $(document).ready(function () {
         $('#button').click(function () {
